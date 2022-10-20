@@ -1,7 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import ClickCounterHigher from './components/ClickCounterHigher';
-import HoverCounter from './components/HoverCounter';
+import ChildComponent from './components/ChildComponent';
+// import Ex1 from './components/Ex1';
+// import ComponentContextA from './components/ComponentContextA';
+// import { UserProvider } from './components/userContext';
+// import ClickCounterRenderProps from './components/ClickCounterRenderProps';
+// import CounterRenderProps from './components/CounterRenderProps';
+// import HoverCounterRenderProps from './components/HoverCounterRenderProps';
+// import ClickCounterHigher from './components/ClickCounterHigher';
+// import HoverCounter from './components/HoverCounter';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import HeroError from './components/HeroError';
 // import FocusInputParent from './components/FocusInputParent';
@@ -31,8 +38,16 @@ import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <ClickCounterHigher name='Naresh' />
-      <HoverCounter />
+      <ChildComponent/>
+      {/* <Ex1 name='Naresh'/> */}
+      {/* <UserProvider value='Vishwas'>      
+        <ComponentContextA />
+      </UserProvider> */}
+      {/* <CounterRenderProps render={(count, IncrementCount) => (<ClickCounterRenderProps count={count} IncrementCount={IncrementCount} />)} />
+      <CounterRenderProps render={(count, IncrementCount) => (<HoverCounterRenderProps count={count} IncrementCount={IncrementCount} />)} /> */}
+
+      {/* <ClickCounterHigher name='Naresh' /> */}
+      {/* <HoverCounter /> */}
       {/* <HeroError heroName='Joker' /> */}
       {/* <ErrorBoundary>
         <HeroError heroName='Superman' />
